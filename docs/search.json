@@ -59,8 +59,8 @@
     "objectID": "materials/pre-training/index.html#what-is-r",
     "href": "materials/pre-training/index.html#what-is-r",
     "title": "An introduction to R, RStudio, git, and GitHub",
-    "section": "",
-    "text": "R is an open source programming language for statistical analysis and data visualisation. It was developed by Ross Ihaka and Robert Gentleman of the University of Auckland and released in 1995. There are currently 21,119 peer-reviewed and tested packages available for R. These packages provide functions for frequentist and Bayesian statistics, meta-analysis, machine and deep learning, Big Data processing, interactive graphics etc."
+    "section": "What is R?",
+    "text": "What is R?\nR is an open source programming language for statistical analysis and data visualisation. It was developed by Ross Ihaka and Robert Gentleman of the University of Auckland and released in 1995. There are currently 21,119 peer-reviewed and tested packages available for R. These packages provide functions for frequentist and Bayesian statistics, meta-analysis, machine and deep learning, Big Data processing, interactive graphics etc."
   },
   {
     "objectID": "materials/pre-training/index.html#open-source",
