@@ -1,0 +1,22 @@
+{
+"type": "FeatureCollection",
+"name": "r-ladies",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "chapter": "R-Ladies Cotonou", "city": "Cotonou", "country": "Benin", "url": "http://meetup.com/rladies-cotonou" }, "geometry": { "type": "Point", "coordinates": [ 2.4252507, 6.3676953 ] } },
+{ "type": "Feature", "properties": { "chapter": "R-Ladies Gaborone", "city": "Gaborone ", "country": "Botswana", "url": "https://www.meetup.com/rladies-gaborone/" }, "geometry": { "type": "Point", "coordinates": [ 25.9088474, -24.6581357 ] } },
+{ "type": "Feature", "properties": { "chapter": "R-Ladies Yaoundé", "city": "Yaoundé", "country": "Cameroon", "url": "http://meetup.com/rladies-yaounde" }, "geometry": { "type": "Point", "coordinates": [ 11.5213344, 3.8689867 ] } },
+{ "type": "Feature", "properties": { "chapter": "R-Ladies Cairo", "city": "Cairo", "country": "Egypt", "url": "http://meetup.com/rladies-cairo" }, "geometry": { "type": "Point", "coordinates": [ 31.2357257, 30.0443879 ] } },
+{ "type": "Feature", "properties": { "chapter": "R-Ladies Addis Abeba", "city": "Addis Ababa", "country": "Ethiopia", "url": "http://meetup.com/rladies-addis-ababa" }, "geometry": { "type": "Point", "coordinates": [ 38.7524127, 9.0358287 ] } },
+{ "type": "Feature", "properties": { "chapter": "R-Ladies Accra", "city": "Accra", "country": "Ghana", "url": "http://meetup.com/rladies-accra" }, "geometry": { "type": "Point", "coordinates": [ -0.2012376, 5.5571096 ] } },
+{ "type": "Feature", "properties": { "chapter": "R-Ladies Kumasi", "city": "Kumasi", "country": "Ghana", "url": "http://meetup.com/rladies-kumasi" }, "geometry": { "type": "Point", "coordinates": [ -1.6233086, 6.6985605 ] } },
+{ "type": "Feature", "properties": { "chapter": "R-Ladies Nairobi", "city": "Nairobi", "country": "Kenya", "url": "https://www.meetup.com/rladies-nairobi/" }, "geometry": { "type": "Point", "coordinates": [ 36.828842018137252, -1.30261485 ] } },
+{ "type": "Feature", "properties": { "chapter": "R-Ladies Rabat", "city": "Rabat", "country": "Morocco", "url": "http://meetup.com/rladies-rabat" }, "geometry": { "type": "Point", "coordinates": [ -6.8340222, 34.02236 ] } },
+{ "type": "Feature", "properties": { "chapter": "R-Ladies Abuja", "city": "Abuja", "country": "Nigeria", "url": "https://www.meetup.com/rladies-abuja/" }, "geometry": { "type": "Point", "coordinates": [ 7.4892974, 9.0643305 ] } },
+{ "type": "Feature", "properties": { "chapter": "R-Ladies Lagos", "city": "Lagos", "country": "Nigeria", "url": "https://www.meetup.com/rladies-lagos/" }, "geometry": { "type": "Point", "coordinates": [ 3.3941795, 6.4550575 ] } },
+{ "type": "Feature", "properties": { "chapter": "R-Ladies Cape Town", "city": "Cape Town", "country": "South Africa", "url": "http://meetup.com/rladies-cape-town" }, "geometry": { "type": "Point", "coordinates": [ 18.417396, -33.928992 ] } },
+{ "type": "Feature", "properties": { "chapter": "R-Ladies Johannesburg", "city": "Johannesburg", "country": "South Africa", "url": "http://meetup.com/rladies-johannesburg" }, "geometry": { "type": "Point", "coordinates": [ 28.049722, -26.205 ] } },
+{ "type": "Feature", "properties": { "chapter": "R-Ladies Al-Khartum", "city": "Khartoum", "country": "Sudan", "url": "http://meetup.com/rladies-al-khartum" }, "geometry": { "type": "Point", "coordinates": [ 32.5349123, 15.5635972 ] } },
+{ "type": "Feature", "properties": { "chapter": "R-Ladies Tunis", "city": "Tunis", "country": "Tunisia", "url": "http://meetup.com/rladies-tunis" }, "geometry": { "type": "Point", "coordinates": [ 10.1857757, 36.8002068 ] } }
+]
+}

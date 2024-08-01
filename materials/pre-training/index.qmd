@@ -1,0 +1,263 @@
+---
+title: "An introduction to R, RStudio, git, and GitHub"
+format:
+  revealjs: 
+    slide-number: true
+    preview-links: auto
+    css: styles.css
+    logo: img/logo.png
+    embed-resources: true
+editor_options: 
+  chunk_output_type: console
+---
+
+# R
+
+## What is R?
+
+```{r}
+packages <- format(nrow(available.packages()), big.mark = ",", scientific = FALSE)
+```
+
+R is an open source programming language for statistical analysis and data visualisation. It was developed by Ross Ihaka and Robert Gentleman of the University of Auckland and released in 1995. There are currently `r packages` peer-reviewed and tested [packages available for R](https://cran.r-project.org/web/packages/). These packages provide functions for frequentist and Bayesian statistics, meta-analysis, machine and deep learning, Big Data processing, interactive graphics etc.
+
+# Why use R?
+
+## Open-source
+
+::: columns
+::: {.column width="50%"}
+![Source: [dplyr GitHub repo](https://github.com/tidyverse/dplyr)](img/open.png){fig-alt="dplyr GitHub repo"}
+:::
+
+::: {.column width="50%"}
+-   R is free to use
+-   No vendor lock-in
+-   Codebase is open to view
+-   Users develop and maintain packages
+:::
+:::
+
+## Shareable
+
+::: columns
+::: {.column width="50%"}
+![](img/shareable.png){fig-alt="Email with R code"}
+:::
+
+::: {.column width="50%"}
+Text is easily distributed
+:::
+:::
+
+## Human readable
+
+``` {.r code-line-numbers="|5|8|10|12"}
+# Number of African elephants
+# Source: IUCN / Our World in Data
+# URL: https://ourworldindata.org/elephant-populations
+
+# load tidyverse package
+library(tidyverse)
+
+# read CSV file
+df <- read_csv("african-elephants.csv") |> 
+  # filter by latest year and exclude rows containing 'Africa'
+  filter(Year == max(Year), !str_detect(Entity, "Africa")) |> 
+  # select and rename columns  
+  select(country = Entity, n = 4)
+```
+
+## Diffable
+
+Changes in code can be tracked with version control
+
+![](img/diffable.png){fig-alt="git commit history"}
+
+## Reproducible
+
+::: columns
+::: {.column width="50%"}
+![Source: [\@bengoldacre](https://www.twitter.com/bengoldacre/status/932962713864757251)](img/goldacre.png){fig-alt="Tweet from Ben Goldacre"}
+:::
+
+::: {.column width="50%"}
+-   Shows homework
+-   Enables peer review
+-   Gives confidence in results
+:::
+:::
+
+## Community driven
+
+::: columns
+::: {.column width="10%"}
+![](img/r-ladies.png)
+:::
+
+::: {.column width="90%"}
+```{r}
+library(sf) ; library(mapview)
+chapters <- read_sf("data/r-ladies.geojson")
+mapview(chapters, 
+        map.types = "CartoDB.Positron",
+        col = "#FFFFFF", 
+        col.regions = "#88398A", 
+        alpha.regions = 1,
+        label = "chapter", 
+        layer.name = "R-Ladies chapters", 
+        legend = FALSE)
+```
+:::
+:::
+
+::: footer
+Find out more about [R-Ladies](https://rladies.org/)
+:::
+
+# RStudio
+
+## Software
+
+[RStudio](https://posit.co/products/open-source/rstudio/) is an integrated development environment (IDE) for R. It's intuitive interface makes working with R much easier. It supports syntax highlighting, tab completion and is integrated with [Quarto](https://quarto.org/).
+
+RStudio is freely available under the [GNU Affero General Public License v3](http://www.gnu.org/licenses/agpl-3.0-standalone.html). A commercial desktop license is also available.
+
+## RStudio's panes
+
+![](img/panes.png){fig-alt="RStudio panes"}
+
+## Console {.smaller}
+
+::: columns
+::: {.column width="60%"}
+![](img/console.png){fig-alt="RStudio's console pane"}
+:::
+
+::: {.column width="40%"}
+The Console is used to execute R commands immediately.
+:::
+:::
+
+## Source {.smaller}
+
+::: columns
+::: {.column width="60%"}
+![](img/source.png){fig-alt="RStudio' source pane"}
+:::
+
+::: {.column width="40%"}
+The Source pane appears when you open a new file e.g. *File -\> New File -\> R Script*. Code can be saved in dedicated .R scripts and executed in the console with `Ctrl-Enter/Cmd-Enter`. Syntax highlighting and tab completion are also available.
+:::
+:::
+
+## Environment {.smaller}
+
+::: columns
+::: {.column width="60%"}
+![](img/environment.png){fig-alt="RStudio's environment pane"}
+:::
+
+::: {.column width="40%"}
+The Environment pane shows the datasets, models, and plots that are loaded in the current R session. This pane also contains tabs with a scrollable history of executed code, connections to databases and git options.
+:::
+:::
+
+## Files {.smaller}
+
+::: columns
+::: {.column width="60%"}
+![](img/files.png){fig-alt="RStudio's files pane"}
+:::
+
+::: {.column width="40%"}
+The Files pane shows plots and interactive web content, help documentation and R packages that you can install and load.
+:::
+:::
+
+## Customisation {.smaller}
+
+The appearance of RStudio can be changed to suit you:
+
+-   Increase the font size: *Tools \> Global Options \> Appearance \> Editor Font size*
+-   Move the Console pane to the right: *View \> Panes \> Console on Right*
+-   Add a margin column line: *Tools \> Global Options \> Code \> Display \> Show margin*
+-   Automatic text wrapping: *Tools \> Global Options \> Code \> Editing \> Soft-wrap R source files*
+
+You can also change RStudio's overall theme. Opting for a dark theme reduces the amount of glare that your eyes are subject to. Change the global theme to Dark by selecting 'Appearance' in the *Global Options* menu and opt for an Editor theme with a dark palette such as 'Material'.
+
+## Keyboard shortcuts {.smaller}
+
+RStudio has many useful shortcuts that enable you to keep your hands on the keyboard thereby boosting your coding productivity. For example,
+
+-   `Ctrl/Cmd + Enter`: Run your selected code in the Console
+-   `Ctrl/Cmd + Shift + M`: Add piping operator `|>`
+-   `Ctrl/Cmd + L`: Clear the console window
+-   `Ctrl/Cmd + Shift + R`: Add a section break
+-   `Shift + Ctrl/Cmd + 1`: Make the console full screen
+-   `Ctrl/Cmd + Shift + A`: Format your code
+
+**NB** The use of Ctrl or Cmd depends on whether you are using a Windows or a Mac device.
+
+For a complete list of all available shortcuts just type: `Alt + Shift + K`
+
+# git and GitHub
+
+## git {.smaller}
+
+::: columns
+::: {.column width="40%"}
+![](img/git.png){width="60%"}
+
+git is a piece of version control software written by Linus Torvalds, the creator of Linux.
+:::
+
+::: {.column width="60%"}
+::: blockquote
+GIT — the stupid content tracker
+
+"git" can mean anything, depending on your mood.
+
+-   random three-letter combination that is pronounceable, and not actually used by any common UNIX command. The fact that it is a mispronunciation of "get" may or may not be relevant.
+-   stupid. contemptible and despicable. simple. Take your pick from the dictionary of slang.
+-   "global information tracker": you’re in a good mood, and it actually works for you. Angels sing, and a light suddenly fills the room.
+-   \[REDACTED\]
+:::
+
+from Torvalds' [initial commit](https://github.com/git/git/commit/e83c5163316f89bfbde7d9ab23ca2e25604af290) on 7 April 2005.
+:::
+:::
+
+## git glossary {.scrollable}
+
+-   **repo** project folder
+-   **remote** a repo available to all team members
+-   **clone** get repo from remote
+-   **stage** prepare files for commit
+-   **commit** take a snapshot of a file or files
+-   **hash** commit id
+-   **pull** get commits from a repo
+-   **push** send commits to a repo
+-   **branch** sandbox in a repo
+-   **main** default branch where live code sits
+-   **merge** combine all commits on branches
+-   **merge conflict** contradictory file changes
+-   **pull request** propose changes to remote repo
+
+## GitHub {.smaller}
+
+::: columns
+::: {.column width="40%"}
+![](img/github.png){width="60%"}
+
+GitHub is a website and service that hosts Git repositories, where developers can store, share, and collaborate on their projects.
+:::
+
+::: {.column width="50%"}
+-   Changes to local files are tracked and timestamped with git and hosted remotely on GitHub in repositories (or repos).
+-   GitHub facilitates collaborative development because changes can be made to files by different people and merged together.
+-   GitHub also provides issue tracking, wikis, website hosting amongst other services.
+:::
+:::
+
+# Questions?

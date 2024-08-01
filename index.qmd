@@ -1,0 +1,5 @@
+---
+title: "Automating CRVS report tables"
+---
+
+Minimal website containing materials for in-country workshops on the CRVS R-pipeline for producing Vital Statistics tables.

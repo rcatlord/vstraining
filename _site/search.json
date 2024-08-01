@@ -1,0 +1,212 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Automating CRVS report tables",
+    "section": "",
+    "text": "Minimal website containing materials for in-country workshops on the CRVS R-pipeline for producing Vital Statistics tables."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "setup.html",
+    "href": "setup.html",
+    "title": "Setup",
+    "section": "",
+    "text": "Please follow the steps below so that you have the necessary software for the workshops."
+  },
+  {
+    "objectID": "setup.html#download-and-install-r",
+    "href": "setup.html#download-and-install-r",
+    "title": "Setup",
+    "section": "1. Download and install R",
+    "text": "1. Download and install R\nTo download R go to https://cloud.r-project.org/. There are different downloads for Windows, MacOS and Linux operating systems.\nThere’s normally a major update to R each year so it is recommended that you update your version of R regularly."
+  },
+  {
+    "objectID": "setup.html#download-and-install-rstudio",
+    "href": "setup.html#download-and-install-rstudio",
+    "title": "Setup",
+    "section": "2. Download and install RStudio",
+    "text": "2. Download and install RStudio\nRStudio is an integrated development environment (IDE) for R. This is essentially a more user friendly way of interacting with R.\nYou can download and install RStudio from https://posit.co/download/rstudio-desktop. Versions are available for Windows 10/11, macOS 12+ and other operating systems.\nRStudio is updated regularly but reminders to update will periodically pop up.\nOpen up RStudio and select File &gt; New File &gt; R script. An untitled R script will appear in the Source pane. Now copy and paste the code below into the window. Then Ctrl+A the code and hit Ctrl+Enter to run it.\n\ninstall.packages(\"ggplot2\")\nlibrary(ggplot2)\nggplot(mtcars, aes(mpg, wt)) +\n  geom_point()\n\nIf you see a scatter plot like this then your installation of R and RStudio has been successful."
+  },
+  {
+    "objectID": "setup.html#download-and-install-git",
+    "href": "setup.html#download-and-install-git",
+    "title": "Setup",
+    "section": "3. Download and install Git",
+    "text": "3. Download and install Git\nFirst we’ll check whether you already have Git on your computer. Open the Command Prompt (find the Search Bar and enter “cmd”) and run: git --version. The Git version you’re currently using will be returned. If git: command not found or similar is returned then you need to download and install Git.\nIf you are using Windows and have admin rights then go to https://git-scm.com/download/win and download the Standalone Installer for 64-bit.\n\n\n\n\n\n\nNote\n\n\n\nNote that RStudio requires a 64-bit operating system.\n\n\nRun through the installation process and accept all of the default settings. Downloads for other operating systems are available at https://git-scm.com/download."
+  },
+  {
+    "objectID": "setup.html#register-for-a-free-github-account",
+    "href": "setup.html#register-for-a-free-github-account",
+    "title": "Setup",
+    "section": "4. Register for a free GitHub account",
+    "text": "4. Register for a free GitHub account\nGitHub accounts are free. All you need to do is provide an email address, password and a unique username. There are some tips on creating a GitHub username here. Once you have completed the sign up process you can visit your dashboard and update your profile."
+  },
+  {
+    "objectID": "materials/setup.html",
+    "href": "materials/setup.html",
+    "title": "Setup",
+    "section": "",
+    "text": "Please follow the steps below so that you have the necessary software for the workshops."
+  },
+  {
+    "objectID": "materials/setup.html#download-and-install-r",
+    "href": "materials/setup.html#download-and-install-r",
+    "title": "Setup",
+    "section": "1. Download and install R",
+    "text": "1. Download and install R\nTo download R go to https://cloud.r-project.org/. There are different downloads for Windows, MacOS and Linux operating systems.\nThere’s normally a major update to R each year so it is recommended that you update your version of R regularly."
+  },
+  {
+    "objectID": "materials/setup.html#download-and-install-rstudio",
+    "href": "materials/setup.html#download-and-install-rstudio",
+    "title": "Setup",
+    "section": "2. Download and install RStudio",
+    "text": "2. Download and install RStudio\nRStudio is an integrated development environment (IDE) for R. This is essentially a more user friendly way of interacting with R.\nYou can download and install RStudio from https://posit.co/download/rstudio-desktop. Versions are available for Windows 10/11, macOS 12+ and other operating systems.\nRStudio is updated regularly but reminders to update will periodically pop up.\nOpen up RStudio and select File &gt; New File &gt; R script. An untitled R script will appear in the Source pane. Now copy and paste the code below into the window. Then Ctrl+A the code and hit Ctrl+Enter to run it.\n\ninstall.packages(\"ggplot2\")\nlibrary(ggplot2)\nggplot(mtcars, aes(mpg, wt)) +\n  geom_point()\n\nIf you see a scatter plot like this then your installation of R and RStudio has been successful."
+  },
+  {
+    "objectID": "materials/setup.html#download-and-install-git",
+    "href": "materials/setup.html#download-and-install-git",
+    "title": "Setup",
+    "section": "3. Download and install Git",
+    "text": "3. Download and install Git\nFirst we’ll check whether you already have Git on your computer. Open the Command Prompt (find the Search Bar and enter “cmd”) and run: git --version. The Git version you’re currently using will be returned. If git: command not found or similar is returned then you need to download and install Git.\nIf you are using Windows and have admin rights then go to https://git-scm.com/download/win and download the Standalone Installer for 64-bit.\n\n\n\n\n\n\nNote\n\n\n\nNote that RStudio requires a 64-bit operating system.\n\n\nRun through the installation process and accept all of the default settings. Downloads for other operating systems are available at https://git-scm.com/download."
+  },
+  {
+    "objectID": "materials/setup.html#register-for-a-free-github-account",
+    "href": "materials/setup.html#register-for-a-free-github-account",
+    "title": "Setup",
+    "section": "4. Register for a free GitHub account",
+    "text": "4. Register for a free GitHub account\nGitHub accounts are free. All you need to do is provide an email address, password and a unique username. There are some tips on creating a GitHub username here. Once you have completed the sign up process you can visit your dashboard and update your profile."
+  },
+  {
+    "objectID": "materials/pre-training/index.html#what-is-r",
+    "href": "materials/pre-training/index.html#what-is-r",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "What is R?",
+    "text": "What is R?\nR is an open source programming language for statistical analysis and data visualisation. It was developed by Ross Ihaka and Robert Gentleman of the University of Auckland and released in 1995. There are currently 21,119 peer-reviewed and tested packages available for R. These packages provide functions for frequentist and Bayesian statistics, meta-analysis, machine and deep learning, Big Data processing, interactive graphics etc."
+  },
+  {
+    "objectID": "materials/pre-training/index.html#open-source",
+    "href": "materials/pre-training/index.html#open-source",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "Open-source",
+    "text": "Open-source\n\n\n\n\n\nSource: dplyr GitHub repo\n\n\n\n\nR is free to use\nNo vendor lock-in\nCodebase is open to view\nUsers develop and maintain packages"
+  },
+  {
+    "objectID": "materials/pre-training/index.html#shareable",
+    "href": "materials/pre-training/index.html#shareable",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "Shareable",
+    "text": "Shareable\n\n\n\n\nText is easily distributed"
+  },
+  {
+    "objectID": "materials/pre-training/index.html#human-readable",
+    "href": "materials/pre-training/index.html#human-readable",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "Human readable",
+    "text": "Human readable\n# Number of African elephants\n# Source: IUCN / Our World in Data\n# URL: https://ourworldindata.org/elephant-populations\n\n# load tidyverse package\nlibrary(tidyverse)\n\n# read CSV file\ndf &lt;- read_csv(\"african-elephants.csv\") |&gt; \n  # filter by latest year and exclude rows containing 'Africa'\n  filter(Year == max(Year), !str_detect(Entity, \"Africa\")) |&gt; \n  # select and rename columns  \n  select(country = Entity, n = 4)"
+  },
+  {
+    "objectID": "materials/pre-training/index.html#diffable",
+    "href": "materials/pre-training/index.html#diffable",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "Diffable",
+    "text": "Diffable\nChanges in code can be tracked with version control"
+  },
+  {
+    "objectID": "materials/pre-training/index.html#reproducible",
+    "href": "materials/pre-training/index.html#reproducible",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "Reproducible",
+    "text": "Reproducible\n\n\n\n\n\nSource: @bengoldacre\n\n\n\n\nShows homework\nEnables peer review\nGives confidence in results"
+  },
+  {
+    "objectID": "materials/pre-training/index.html#community-driven",
+    "href": "materials/pre-training/index.html#community-driven",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "Community driven",
+    "text": "Community driven\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFind out more about R-Ladies"
+  },
+  {
+    "objectID": "materials/pre-training/index.html#software",
+    "href": "materials/pre-training/index.html#software",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "Software",
+    "text": "Software\nRStudio is an integrated development environment (IDE) for R. It’s intuitive interface makes working with R much easier. It supports syntax highlighting, tab completion and is integrated with Quarto.\nRStudio is freely available under the GNU Affero General Public License v3. A commercial desktop license is also available."
+  },
+  {
+    "objectID": "materials/pre-training/index.html#rstudios-panes",
+    "href": "materials/pre-training/index.html#rstudios-panes",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "RStudio’s panes",
+    "text": "RStudio’s panes"
+  },
+  {
+    "objectID": "materials/pre-training/index.html#console",
+    "href": "materials/pre-training/index.html#console",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "Console",
+    "text": "Console\n\n\n\n\nThe Console is used to execute R commands immediately."
+  },
+  {
+    "objectID": "materials/pre-training/index.html#source",
+    "href": "materials/pre-training/index.html#source",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "Source",
+    "text": "Source\n\n\n\n\nThe Source pane appears when you open a new file e.g. File -&gt; New File -&gt; R Script. Code can be saved in dedicated .R scripts and executed in the console with Ctrl-Enter/Cmd-Enter. Syntax highlighting and tab completion are also available."
+  },
+  {
+    "objectID": "materials/pre-training/index.html#environment",
+    "href": "materials/pre-training/index.html#environment",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "Environment",
+    "text": "Environment\n\n\n\n\nThe Environment pane shows the datasets, models, and plots that are loaded in the current R session. This pane also contains tabs with a scrollable history of executed code, connections to databases and git options."
+  },
+  {
+    "objectID": "materials/pre-training/index.html#files",
+    "href": "materials/pre-training/index.html#files",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "Files",
+    "text": "Files\n\n\n\n\nThe Files pane shows plots and interactive web content, help documentation and R packages that you can install and load."
+  },
+  {
+    "objectID": "materials/pre-training/index.html#customisation",
+    "href": "materials/pre-training/index.html#customisation",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "Customisation",
+    "text": "Customisation\nThe appearance of RStudio can be changed to suit you:\n\nIncrease the font size: Tools &gt; Global Options &gt; Appearance &gt; Editor Font size\nMove the Console pane to the right: View &gt; Panes &gt; Console on Right\nAdd a margin column line: Tools &gt; Global Options &gt; Code &gt; Display &gt; Show margin\nAutomatic text wrapping: Tools &gt; Global Options &gt; Code &gt; Editing &gt; Soft-wrap R source files\n\nYou can also change RStudio’s overall theme. Opting for a dark theme reduces the amount of glare that your eyes are subject to. Change the global theme to Dark by selecting ‘Appearance’ in the Global Options menu and opt for an Editor theme with a dark palette such as ‘Material’."
+  },
+  {
+    "objectID": "materials/pre-training/index.html#keyboard-shortcuts",
+    "href": "materials/pre-training/index.html#keyboard-shortcuts",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "Keyboard shortcuts",
+    "text": "Keyboard shortcuts\nRStudio has many useful shortcuts that enable you to keep your hands on the keyboard thereby boosting your coding productivity. For example,\n\nCtrl/Cmd + Enter: Run your selected code in the Console\nCtrl/Cmd + Shift + M: Add piping operator |&gt;\nCtrl/Cmd + L: Clear the console window\nCtrl/Cmd + Shift + R: Add a section break\nShift + Ctrl/Cmd + 1: Make the console full screen\nCtrl/Cmd + Shift + A: Format your code\n\nNB The use of Ctrl or Cmd depends on whether you are using a Windows or a Mac device.\nFor a complete list of all available shortcuts just type: Alt + Shift + K"
+  },
+  {
+    "objectID": "materials/pre-training/index.html#git",
+    "href": "materials/pre-training/index.html#git",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "git",
+    "text": "git\n\n\n\ngit is a piece of version control software written by Linus Torvalds, the creator of Linux.\n\n\nGIT — the stupid content tracker\n“git” can mean anything, depending on your mood.\n\nrandom three-letter combination that is pronounceable, and not actually used by any common UNIX command. The fact that it is a mispronunciation of “get” may or may not be relevant.\nstupid. contemptible and despicable. simple. Take your pick from the dictionary of slang.\n“global information tracker”: you’re in a good mood, and it actually works for you. Angels sing, and a light suddenly fills the room.\n[REDACTED]\n\n\nfrom Torvalds’ initial commit on 7 April 2005."
+  },
+  {
+    "objectID": "materials/pre-training/index.html#git-glossary",
+    "href": "materials/pre-training/index.html#git-glossary",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "git glossary",
+    "text": "git glossary\n\nrepo project folder\nremote a repo available to all team members\nclone get repo from remote\nstage prepare files for commit\ncommit take a snapshot of a file or files\nhash commit id\npull get commits from a repo\npush send commits to a repo\nbranch sandbox in a repo\nmain default branch where live code sits\nmerge combine all commits on branches\nmerge conflict contradictory file changes\npull request propose changes to remote repo"
+  },
+  {
+    "objectID": "materials/pre-training/index.html#github",
+    "href": "materials/pre-training/index.html#github",
+    "title": "An introduction to R, RStudio, git, and GitHub",
+    "section": "GitHub",
+    "text": "GitHub\n\n\n\nGitHub is a website and service that hosts Git repositories, where developers can store, share, and collaborate on their projects.\n\n\nChanges to local files are tracked and timestamped with git and hosted remotely on GitHub in repositories (or repos).\nGitHub facilitates collaborative development because changes can be made to files by different people and merged together.\nGitHub also provides issue tracking, wikis, website hosting amongst other services."
+  }
+]
